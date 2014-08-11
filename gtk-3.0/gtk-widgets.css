@@ -1780,11 +1780,7 @@ GtkLevelBar.vertical {
     border-width: 1px;
     border-color: shade(@theme_bg_color, 0.7);
     border-radius: 10px;
-    background-image: linear-gradient(to right,
-                                      shade(shade(@theme_bg_color, 0.9), 1.2),
-                                      shade(shade(@theme_bg_color, 0.9), 1.15)
-                                      );
-
+	background-color: shade(@theme_bg_color, 0.75);
     color: shade(@theme_bg_color, 0.6);
 }
 
@@ -1797,18 +1793,9 @@ GtkLevelBar.vertical {
 }
 
 .scrollbar.slider:hover,
+.scrollbar.slider.vertical:hover,
 .scrollbar.slider.vertical:hover {
-    background-image: linear-gradient(to right,
-                                      shade(shade(@theme_bg_color, 0.8), 1.2),
-                                      shade(shade(@theme_bg_color, 0.8), 1.15)
-                                      );
-}
-
-.scrollbar.slider.horizontal:hover {
-    background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 0.8), 1.2),
-                                      shade(shade(@theme_bg_color, 0.8), 1.15)
-                                      );
+	background-color: shade(@theme_bg_color, 0.8);
 }
 
 .scrollbar.button:insensitive,
