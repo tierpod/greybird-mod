@@ -45,8 +45,6 @@ style "default"
 
 	GtkPaned		::handle-size          			= 3
 
-	GtkNotebook		::tab-overlap				=-2
-
 	GtkProgressBar		::min-vertical-bar-width		= 10
 	GtkProgressBar		::min-horizontal-bar-height		= 10
 
@@ -81,7 +79,7 @@ style "default"
 	GtkWidget		::focus-padding				= 0
 	
 	GtkWindow		::resize-grip-height			= 13
-        GtkWindow		::resize-grip-width			= 13
+    GtkWindow		::resize-grip-width			= 13
 
 	xthickness = 1
 	ythickness = 1
@@ -267,11 +265,12 @@ style "notebook-bg"
 style "notebook" = "notebook-bg"
 {
 	xthickness = 3 # Width of tabs and notebook borders.
-	ythickness = 3 # Height of tabs and notebook borders.
+	ythickness = 2 # Height of tabs and notebook borders.
 
 	engine "murrine" {
 		contrast		= .6
 		gradient_shades		= {1.1,1.05,1.05,1.0}
+		roundness = 2
 		#focusstyle		= 2
 		#lightborder_shade	= 1.16
 	}
