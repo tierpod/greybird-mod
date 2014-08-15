@@ -823,7 +823,7 @@ widget_class "*<GtkCList>"		style "fg-is-text-color-workaround"
 widget_class "*<EelEditableLabel>"	style "fg-is-text-color-workaround"
 
 # panel theming
-include "apps/xfce-panel.rc"
+# include "apps/xfce-panel.rc"
 # application specific theming
 include "apps/chromium.rc"
 include "apps/claws-mail.rc"
