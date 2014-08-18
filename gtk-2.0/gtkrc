@@ -265,7 +265,7 @@ style "notebook-bg"
 style "notebook" = "notebook-bg"
 {
 	xthickness = 3 # Width of tabs and notebook borders.
-	ythickness = 2 # Height of tabs and notebook borders.
+	ythickness = 3 # Height of tabs and notebook borders.
 
 	engine "murrine" {
 		contrast		= .6

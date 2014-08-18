@@ -1776,20 +1776,14 @@ GtkLevelBar.vertical {
 .scrollbar.slider,
 .scrollbar.button,
 .scrollbar.slider.vertical,
-.scrollbar.button.vertical {
+.scrollbar.button.vertical,
+.scrollbar.slider.horizontal,
+.scrollbar.button.horizontal {
     border-width: 1px;
     border-color: shade(@theme_bg_color, 0.7);
     border-radius: 10px;
 	background-color: shade(@theme_bg_color, 0.75);
     color: shade(@theme_bg_color, 0.6);
-}
-
-.scrollbar.slider.horizontal,
-.scrollbar.button.horizontal {
-    background-image: linear-gradient(to bottom,
-                                      shade(shade(@theme_bg_color, 0.9), 1.2),
-                                      shade(shade(@theme_bg_color, 0.9), 1.15)
-                                      );
 }
 
 .scrollbar.slider:hover,
