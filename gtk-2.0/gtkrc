@@ -662,14 +662,6 @@ style "xfsm-button" = "button"
 	}
 }
 
-style "calendar"
-{
-	fg[NORMAL]	= "#FFFFFF"
-	fg[PRELIGHT]	= "#FFFFFF"
-	bg[NORMAL]	= shade (0.6, @bg_color_dark)
-	bg[PRELIGHT]	= shade (0.8, @selected_bg_color)
-}
-
 ###############################################################################
 # The following part of the gtkrc applies the different styles to the widgets.
 ###############################################################################
@@ -735,8 +727,6 @@ widget_class "*<GtkMenuItem>.*.<GtkScale>" style "scale"
 
 widget_class "*.<GtkFrame>.<GtkLabel>" style "frame-title"
 widget_class "*.<GtkTreeView>*"        style "treeview"
-
-widget_class "*GtkCalendar*"	style "calendar"
 
 widget_class "*GtkHPaned" style "paned"
 widget_class "*GtkVPaned" style "paned"
