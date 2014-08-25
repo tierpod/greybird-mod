@@ -20,7 +20,7 @@
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
     -GtkNotebook-initial-gap: 0;
-    -GtkNotebook-tab-overlap: -2;
+    -GtkNotebook-tab-overlap: 0;
     -GtkPaned-handle-size: 3;
     -GtkProgressBar-min-horizontal-bar-height: 10;
     -GtkProgressBar-min-vertical-bar-width: 10;
@@ -1332,7 +1332,7 @@ GtkModelButton.button:selected {
 }
 
 .notebook.frame {
-    border-width: 1px;
+    border-width: 0px;
 }
 
 .notebook.header {
@@ -1369,7 +1369,7 @@ GtkModelButton.button:selected {
 .notebook tab {
     padding: 3px;
     border-color: shade(@theme_bg_color, 0.9);
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: @theme_bg_color;
     background-image: none;
 }
