@@ -594,7 +594,7 @@ style "xfwm-tabwin"
 	Xfwm4TabwinWidget::icon-size = 64
 
 	bg[NORMAL]	= shade (0.35, @bg_color_dark)
-	bg[SELECTED]	= shade (0.65, @bg_color_dark)
+	bg[SELECTED]	= shade (0.65, @selected_bg_color)
 	fg[NORMAL]	= shade (1.5, @bg_color)
 	base[SELECTED]	= shade (1.5, @bg_color)
 
