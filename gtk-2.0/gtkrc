@@ -593,9 +593,13 @@ style "xfwm-tabwin"
 	Xfwm4TabwinWidget::border-width = 1
 	Xfwm4TabwinWidget::icon-size = 64
 
-	bg[NORMAL]	= shade (0.35, @bg_color_dark)
+	bg[NORMAL]		= shade (0.35, @bg_color_dark)
 	bg[SELECTED]	= shade (0.65, @selected_bg_color)
-	fg[NORMAL]	= shade (1.5, @bg_color)
+	bg[PRELIGHT]	= shade (0.35, @bg_color_dark)
+	bg[ACTIVE]		= shade (0.65, @selected_bg_color)
+	fg[NORMAL]		= shade (1.5, @bg_color)
+	fg[PRELIGHT]	= shade (1.5, @bg_color)
+	fg[ACTIVE]		= shade (1.5, @bg_color)
 	base[SELECTED]	= shade (1.5, @bg_color)
 
 	engine "murrine"
