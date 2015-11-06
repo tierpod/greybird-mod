@@ -307,6 +307,18 @@ GeditViewFrame .gedit-search-slider {
     background-color: @theme_base_color;
 }
 
+GeditViewFrame .gedit-search-slider .button,
+GeditViewFrame .gedit-search-slider .entry {
+    padding: 4px;
+}
+
+GeditViewFrame .gedit-search-slider .entry, 
+GeditViewFrame .gedit-search-slider .entry:active,
+GeditViewFrame .gedit-search-slider .entry:focus {
+    border-right-width: 1px;
+    border-right-color: shade(@theme_bg_color, 0.8);
+}
+
 GeditViewFrame .gedit-search-slider .not-found {
     background-color: @error_bg_color;
     background-image: none;
@@ -329,6 +341,33 @@ GeditFileBrowserWidget .toolbar {
     margin: 2px;
     padding: 2px;
     color: mix(@theme_text_color, @theme_base_color, 0.4);
+}
+
+/**********
+ * Evince *
+ **********/
+EvWindow EggFindBar.primary-toolbar.toolbar {
+    padding: 4px;
+    background-color: @toolbar_bg_color;
+    background-image: none;
+}
+
+EvWindow EggFindBar.primary-toolbar.toolbar .button,
+EvWindow EggFindBar.primary-toolbar.toolbar .entry {
+    padding: 4px;
+}
+
+EvWindow EggFindBar.primary-toolbar.toolbar .entry,
+EvWindow EggFindBar.primary-toolbar.toolbar .entry:active,
+EvWindow EggFindBar.primary-toolbar.toolbar .entry:focus {
+    border-right-width: 1px;
+    border-right-color: shade(@theme_bg_color, 0.8);
+}
+
+
+EvWindow EvFindSidebar .frame {
+    border: none;
+    border-right: 1px solid shade(@theme_bg_color, 0.8);
 }
 
 /***************
@@ -380,4 +419,34 @@ GtkEntry.entry.pin-entry {
 
 GtkLabel.pin-label {
 	font: regular 50;
+}
+
+/*********
+ * Geary *
+ *********/
+ .sidebar ConversationListView.view {
+    background-color: @theme_base_color;
+    background-image: none;
+    color: @theme_text_color;
+}
+
+.sidebar ConversationListView.view row:selected,
+.sidebar ConversationListView.view row:selected:hover,
+.sidebar ConversationListView.view row:selected:focus {
+    border-color: shade(@theme_selected_bg_color, 1.1);
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_selected_bg_color, 1.2),
+                                      shade(@theme_selected_bg_color, 1.0)
+                                      );
+
+    color: @theme_selected_fg_color;
+}
+
+/************
+ * Shotwell *
+ ************/
+SearchFilterToolbar.toolbar {
+    background-color: @panel_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color;
 }
